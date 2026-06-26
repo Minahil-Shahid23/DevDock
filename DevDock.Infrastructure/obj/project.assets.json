@@ -1,0 +1,114 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "DevDock.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "DevDock.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DevDock.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevDock.Application.dll": {}
+        }
+      },
+      "DevDock.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/DevDock.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DevDock.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevDock.Application/1.0.0": {
+      "type": "project",
+      "path": "../DevDock.Application/DevDock.Application.csproj",
+      "msbuildProject": "../DevDock.Application/DevDock.Application.csproj"
+    },
+    "DevDock.Domain/1.0.0": {
+      "type": "project",
+      "path": "../DevDock.Domain/DevDock.Domain.csproj",
+      "msbuildProject": "../DevDock.Domain/DevDock.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "DevDock.Application >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\dotnet project\\DevDock\\DevDock.Infrastructure\\DevDock.Infrastructure.csproj",
+      "projectName": "DevDock.Infrastructure",
+      "projectPath": "C:\\dotnet project\\DevDock\\DevDock.Infrastructure\\DevDock.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\dotnet project\\DevDock\\DevDock.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\dotnet project\\DevDock\\DevDock.Application\\DevDock.Application.csproj": {
+              "projectPath": "C:\\dotnet project\\DevDock\\DevDock.Application\\DevDock.Application.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.422/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

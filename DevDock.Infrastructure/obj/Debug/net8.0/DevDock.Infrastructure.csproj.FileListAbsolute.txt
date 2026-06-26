@@ -1,0 +1,17 @@
+C:\dotnet project\DevDock\DevDock.Infrastructure\bin\Debug\net8.0\DevDock.Infrastructure.deps.json
+C:\dotnet project\DevDock\DevDock.Infrastructure\bin\Debug\net8.0\DevDock.Infrastructure.dll
+C:\dotnet project\DevDock\DevDock.Infrastructure\bin\Debug\net8.0\DevDock.Infrastructure.pdb
+C:\dotnet project\DevDock\DevDock.Infrastructure\bin\Debug\net8.0\DevDock.Application.dll
+C:\dotnet project\DevDock\DevDock.Infrastructure\bin\Debug\net8.0\DevDock.Domain.dll
+C:\dotnet project\DevDock\DevDock.Infrastructure\bin\Debug\net8.0\DevDock.Application.pdb
+C:\dotnet project\DevDock\DevDock.Infrastructure\bin\Debug\net8.0\DevDock.Domain.pdb
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.csproj.AssemblyReference.cache
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.AssemblyInfoInputs.cache
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.AssemblyInfo.cs
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.csproj.CoreCompileInputs.cache
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock..FE868BAB.Up2Date
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.dll
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\refint\DevDock.Infrastructure.dll
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.pdb
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\ref\DevDock.Infrastructure.dll
