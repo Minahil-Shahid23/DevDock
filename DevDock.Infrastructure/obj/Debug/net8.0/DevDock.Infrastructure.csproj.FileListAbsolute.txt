@@ -15,3 +15,4 @@ C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infras
 C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\refint\DevDock.Infrastructure.dll
 C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.pdb
 C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\ref\DevDock.Infrastructure.dll
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.sourcelink.json

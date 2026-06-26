@@ -37,3 +37,4 @@ C:\dotnet project\DevDock\DevDock.API\obj\Debug\net8.0\refint\DevDock.API.dll
 C:\dotnet project\DevDock\DevDock.API\obj\Debug\net8.0\DevDock.API.pdb
 C:\dotnet project\DevDock\DevDock.API\obj\Debug\net8.0\DevDock.API.genruntimeconfig.cache
 C:\dotnet project\DevDock\DevDock.API\obj\Debug\net8.0\ref\DevDock.API.dll
+C:\dotnet project\DevDock\DevDock.API\obj\Debug\net8.0\DevDock.API.sourcelink.json
