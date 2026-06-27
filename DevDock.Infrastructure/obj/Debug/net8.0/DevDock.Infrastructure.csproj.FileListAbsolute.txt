@@ -16,3 +16,5 @@ C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\refint\DevDock
 C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.pdb
 C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\ref\DevDock.Infrastructure.dll
 C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.sourcelink.json
+C:\dotnet project\DevDock\DevDock.Infrastructure\bin\Debug\net8.0\DevDock.Infrastructure.runtimeconfig.json
+C:\dotnet project\DevDock\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.genruntimeconfig.cache
