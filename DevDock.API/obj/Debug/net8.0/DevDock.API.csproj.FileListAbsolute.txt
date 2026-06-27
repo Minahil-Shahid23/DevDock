@@ -38,3 +38,12 @@ C:\dotnet project\DevDock\DevDock.API\obj\Debug\net8.0\DevDock.API.pdb
 C:\dotnet project\DevDock\DevDock.API\obj\Debug\net8.0\DevDock.API.genruntimeconfig.cache
 C:\dotnet project\DevDock\DevDock.API\obj\Debug\net8.0\ref\DevDock.API.dll
 C:\dotnet project\DevDock\DevDock.API\obj\Debug\net8.0\DevDock.API.sourcelink.json
+C:\dotnet project\DevDock\DevDock.API\bin\Debug\net8.0\MediatR.dll
+C:\dotnet project\DevDock\DevDock.API\bin\Debug\net8.0\MediatR.Contracts.dll
+C:\dotnet project\DevDock\DevDock.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\dotnet project\DevDock\DevDock.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\dotnet project\DevDock\DevDock.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\dotnet project\DevDock\DevDock.API\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\dotnet project\DevDock\DevDock.API\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\dotnet project\DevDock\DevDock.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\dotnet project\DevDock\DevDock.API\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
