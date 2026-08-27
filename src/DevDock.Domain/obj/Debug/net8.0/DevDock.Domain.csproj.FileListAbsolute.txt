@@ -1,0 +1,11 @@
+C:\Users\Admin\DevDock\src\DevDock.Domain\bin\Debug\net8.0\DevDock.Domain.deps.json
+C:\Users\Admin\DevDock\src\DevDock.Domain\bin\Debug\net8.0\DevDock.Domain.dll
+C:\Users\Admin\DevDock\src\DevDock.Domain\bin\Debug\net8.0\DevDock.Domain.pdb
+C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\DevDock.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\DevDock.Domain.AssemblyInfoInputs.cache
+C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\DevDock.Domain.AssemblyInfo.cs
+C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\DevDock.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\DevDock.Domain.dll
+C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\refint\DevDock.Domain.dll
+C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\DevDock.Domain.pdb
+C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\ref\DevDock.Domain.dll

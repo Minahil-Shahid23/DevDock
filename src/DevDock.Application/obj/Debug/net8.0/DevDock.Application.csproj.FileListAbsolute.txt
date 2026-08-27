@@ -1,0 +1,15 @@
+C:\Users\Admin\DevDock\src\DevDock.Application\bin\Debug\net8.0\DevDock.Application.deps.json
+C:\Users\Admin\DevDock\src\DevDock.Application\bin\Debug\net8.0\DevDock.Application.dll
+C:\Users\Admin\DevDock\src\DevDock.Application\bin\Debug\net8.0\DevDock.Application.pdb
+C:\Users\Admin\DevDock\src\DevDock.Application\bin\Debug\net8.0\DevDock.Domain.dll
+C:\Users\Admin\DevDock\src\DevDock.Application\bin\Debug\net8.0\DevDock.Domain.pdb
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock.Application.csproj.AssemblyReference.cache
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock.Application.AssemblyInfoInputs.cache
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock.Application.AssemblyInfo.cs
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock.Application.csproj.CoreCompileInputs.cache
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock..65C84E03.Up2Date
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock.Application.dll
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\refint\DevDock.Application.dll
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock.Application.pdb
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\ref\DevDock.Application.dll
