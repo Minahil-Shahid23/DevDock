@@ -15,3 +15,4 @@ C:\Users\Admin\DevDock\src\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infra
 C:\Users\Admin\DevDock\src\DevDock.Infrastructure\obj\Debug\net8.0\refint\DevDock.Infrastructure.dll
 C:\Users\Admin\DevDock\src\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.pdb
 C:\Users\Admin\DevDock\src\DevDock.Infrastructure\obj\Debug\net8.0\ref\DevDock.Infrastructure.dll
+C:\Users\Admin\DevDock\src\DevDock.Infrastructure\obj\Debug\net8.0\DevDock.Infrastructure.sourcelink.json

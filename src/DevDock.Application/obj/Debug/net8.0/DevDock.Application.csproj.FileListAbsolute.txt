@@ -13,3 +13,4 @@ C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock.Applicat
 C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\refint\DevDock.Application.dll
 C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock.Application.pdb
 C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\ref\DevDock.Application.dll
+C:\Users\Admin\DevDock\src\DevDock.Application\obj\Debug\net8.0\DevDock.Application.sourcelink.json

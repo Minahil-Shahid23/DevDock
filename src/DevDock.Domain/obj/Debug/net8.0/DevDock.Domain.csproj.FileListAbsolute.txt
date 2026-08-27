@@ -9,3 +9,4 @@ C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\DevDock.Domain.dll
 C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\refint\DevDock.Domain.dll
 C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\DevDock.Domain.pdb
 C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\ref\DevDock.Domain.dll
+C:\Users\Admin\DevDock\src\DevDock.Domain\obj\Debug\net8.0\DevDock.Domain.sourcelink.json
