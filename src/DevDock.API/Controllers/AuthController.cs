@@ -51,10 +51,9 @@ public class AuthController : ControllerBase
 [Authorize]
 public IActionResult Me()
 {
-    var email = User.FindFirstValue(JwtRegisteredClaimNames.Email);
-    var role = User.FindFirstValue(ClaimTypes.Role);
-    var userId = User.FindFirstValue(JwtRegisteredClaimNames.Sub);
-
+   var email = User.FindFirst(JwtRegisteredClaimNames.Email)?.Value;
+var role = User.FindFirst(ClaimTypes.Role)?.Value;
+var userId = User.FindFirst(JwtRegisteredClaimNames.Sub)?.Value;
     return Ok(new { userId, email, role });
 }
 }
