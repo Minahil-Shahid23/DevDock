@@ -50,4 +50,11 @@ public class ProjectsController : BaseApiController
         await _projectService.RemoveMemberAsync(projectId, CurrentUserId, memberUserId);
         return NoContent();
     }
+
+    [HttpGet("{projectId}/dashboard")]
+public async Task<ActionResult<ProjectDashboardDto>> GetDashboard(Guid projectId)
+{
+    var result = await _projectService.GetProjectDashboardAsync(projectId, CurrentUserId);
+    return Ok(result);
+}
 }
