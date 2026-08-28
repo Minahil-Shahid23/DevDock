@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DevDock.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c75a6703a76aba3c9ba797b35014d062325dda89")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+83212b404de9f98ada8304984367864164d251c5")]
 [assembly: System.Reflection.AssemblyProductAttribute("DevDock.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DevDock.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
