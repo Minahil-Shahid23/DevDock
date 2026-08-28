@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\DevDock.API.props" />
-</Project>
