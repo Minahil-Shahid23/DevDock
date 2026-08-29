@@ -51,6 +51,8 @@ builder.Services.AddSwaggerGen(options =>
 
 // Bind JwtSettings from appsettings.json
 builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("JwtSettings"));
+builder.Services.Configure<GeminiSettings>(builder.Configuration.GetSection("GeminiSettings"));
+builder.Services.AddHttpClient<ICodeReviewService, CodeReviewService>();
 
 // Register app services for DI
 builder.Services.AddScoped<ITokenService, TokenService>();

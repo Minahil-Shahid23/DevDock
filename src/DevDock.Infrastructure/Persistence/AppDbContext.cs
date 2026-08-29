@@ -11,6 +11,7 @@ public class AppDbContext : DbContext
     public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
     public DbSet<Project> Projects => Set<Project>();
 public DbSet<ProjectMember> ProjectMembers => Set<ProjectMember>();
+public DbSet<CodeReview> CodeReviews => Set<CodeReview>();
 public DbSet<TaskItem> Tasks => Set<TaskItem>();
      protected override void OnModelCreating(ModelBuilder modelBuilder)
 
@@ -75,6 +76,21 @@ modelBuilder.Entity<TaskItem>(entity =>
           .WithMany()
           .HasForeignKey(t => t.CreatedById)
           .OnDelete(DeleteBehavior.Restrict);
+});
+modelBuilder.Entity<CodeReview>(entity =>
+{
+    entity.Property(cr => cr.Code).IsRequired();
+    entity.Property(cr => cr.Suggestions).IsRequired();
+
+    entity.HasOne(cr => cr.User)
+          .WithMany()
+          .HasForeignKey(cr => cr.UserId)
+          .OnDelete(DeleteBehavior.Cascade);
+
+    entity.HasOne(cr => cr.Project)
+          .WithMany()
+          .HasForeignKey(cr => cr.ProjectId)
+          .OnDelete(DeleteBehavior.SetNull);
 });
 
         base.OnModelCreating(modelBuilder);
