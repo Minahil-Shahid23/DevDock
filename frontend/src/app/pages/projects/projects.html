@@ -1,0 +1,45 @@
+<div class="page">
+  <header class="header">
+    <h1>DevDock</h1>
+    <div class="user-info">
+      <span>{{ authService.currentUser()?.fullName }}</span>
+      <button (click)="logout()">Logout</button>
+    </div>
+  </header>
+
+  <div class="content">
+    <div class="toolbar">
+      <h2>My Projects</h2>
+      <button (click)="showCreateForm.set(!showCreateForm())">
+        {{ showCreateForm() ? 'Cancel' : '+ New Project' }}
+      </button>
+    </div>
+
+    @if (showCreateForm()) {
+      <form [formGroup]="createForm" (ngSubmit)="onCreateProject()" class="create-form">
+        <input formControlName="name" placeholder="Project name" />
+        <input formControlName="description" placeholder="Description" />
+        <button type="submit">Create</button>
+      </form>
+    }
+
+    @if (isLoading()) {
+      <p>Loading...</p>
+    } @else if (projects().length === 0) {
+      <p>No projects yet. Create one!</p>
+    } @else {
+      <div class="project-grid">
+        @for (project of projects(); track project.id) {
+          <div class="project-card">
+            <h3>{{ project.name }}</h3>
+            <p>{{ project.description }}</p>
+            <div class="project-meta">
+              <span>{{ project.memberCount }} members</span>
+              <span>{{ project.taskCount }} tasks</span>
+            </div>
+          </div>
+        }
+      </div>
+    }
+  </div>
+</div>
