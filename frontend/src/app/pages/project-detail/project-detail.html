@@ -1,0 +1,92 @@
+<div class="page">
+  <header class="header">
+    <a routerLink="/projects">&larr; Back</a>
+    <h1>{{ project()?.name }}</h1>
+  </header>
+
+  <div class="content">
+    <div class="toolbar">
+      <p>{{ project()?.description }}</p>
+      <button (click)="showCreateForm.set(!showCreateForm())">
+        {{ showCreateForm() ? 'Cancel' : '+ New Task' }}
+      </button>
+    </div>
+
+    @if (showCreateForm()) {
+      <form [formGroup]="createForm" (ngSubmit)="onCreateTask()" class="create-form">
+        <input formControlName="title" placeholder="Task title" />
+        <input formControlName="description" placeholder="Description" />
+        <select formControlName="priority">
+          <option [value]="0">Low</option>
+          <option [value]="1">Medium</option>
+          <option [value]="2">High</option>
+          <option [value]="3">Urgent</option>
+        </select>
+        <button type="submit">Create</button>
+      </form>
+    }
+
+    @if (isLoading()) {
+      <p>Loading...</p>
+    } @else {
+      <div class="kanban-board">
+        <div class="kanban-column">
+          <h3>Todo</h3>
+          @for (task of todoTasks(); track task.id) {
+            <div class="task-card">
+              <strong>{{ task.title }}</strong>
+              <p>{{ task.description }}</p>
+              <span class="priority priority-{{ task.priority }}">{{ task.priority }}</span>
+              <div class="task-actions">
+                <button (click)="moveTask(task, 1)">→ In Progress</button>
+                <button (click)="deleteTask(task.id)">Delete</button>
+              </div>
+            </div>
+          }
+        </div>
+
+        <div class="kanban-column">
+          <h3>In Progress</h3>
+          @for (task of inProgressTasks(); track task.id) {
+            <div class="task-card">
+              <strong>{{ task.title }}</strong>
+              <p>{{ task.description }}</p>
+              <span class="priority priority-{{ task.priority }}">{{ task.priority }}</span>
+              <div class="task-actions">
+                <button (click)="moveTask(task, 2)">→ In Review</button>
+                <button (click)="deleteTask(task.id)">Delete</button>
+              </div>
+            </div>
+          }
+        </div>
+
+        <div class="kanban-column">
+          <h3>In Review</h3>
+          @for (task of inReviewTasks(); track task.id) {
+            <div class="task-card">
+              <strong>{{ task.title }}</strong>
+              <p>{{ task.description }}</p>
+<span class="priority priority-{{ task.priority }}">{{ getPriorityLabel(task.priority) }}</span>              <div class="task-actions">
+                <button (click)="moveTask(task, 3)">→ Done</button>
+                <button (click)="deleteTask(task.id)">Delete</button>
+              </div>
+            </div>
+          }
+        </div>
+
+        <div class="kanban-column">
+          <h3>Done</h3>
+          @for (task of doneTasks(); track task.id) {
+            <div class="task-card done">
+              <strong>{{ task.title }}</strong>
+              <p>{{ task.description }}</p>
+              <div class="task-actions">
+                <button (click)="deleteTask(task.id)">Delete</button>
+              </div>
+            </div>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>

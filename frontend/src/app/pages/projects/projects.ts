@@ -1,13 +1,14 @@
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule, FormBuilder, Validators } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { ProjectService } from '../../services/project';
 import { Auth } from '../../services/auth';
 import { Project } from '../../models/project.model';
 
 @Component({
   selector: 'app-projects',
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, ReactiveFormsModule, RouterLink],
   templateUrl: './projects.html',
   styleUrl: './projects.css'
 })

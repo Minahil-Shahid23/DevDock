@@ -30,8 +30,7 @@
     } @else {
       <div class="project-grid">
         @for (project of projects(); track project.id) {
-          <div class="project-card">
-            <h3>{{ project.name }}</h3>
+<div class="project-card" [routerLink]="['/projects', project.id]">            <h3>{{ project.name }}</h3>
             <p>{{ project.description }}</p>
             <div class="project-meta">
               <span>{{ project.memberCount }} members</span>
