@@ -1,0 +1,52 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: devdock-postgres-compose
+    environment:
+      POSTGRES_USER: devdock
+      POSTGRES_PASSWORD: devdock123
+      POSTGRES_DB: devdockdb
+    ports:
+      - "5434:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    networks:
+      - devdock-network
+
+  backend:
+    build:
+      context: .
+      dockerfile: src/DevDock.API/Dockerfile
+    container_name: devdock-backend
+    depends_on:
+      - postgres
+    environment:
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=devdockdb;Username=devdock;Password=devdock123"
+      JwtSettings__SecretKey: "this-is-a-super-secret-key-for-devdock-dev-only-change-in-prod-123456"
+      JwtSettings__Issuer: "DevDock.API"
+      JwtSettings__Audience: "DevDock.Client"
+      GeminiSettings__ApiKey: "${GEMINI_API_KEY}"
+      GeminiSettings__Model: "gemini-2.5-flash"
+    ports:
+      - "5296:8080"
+    networks:
+      - devdock-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: devdock-frontend
+    depends_on:
+      - backend
+    ports:
+      - "4200:80"
+    networks:
+      - devdock-network
+
+networks:
+  devdock-network:
+    driver: bridge
+
+volumes:
+  postgres_data:
