@@ -89,4 +89,9 @@ onCreateTask(): void {
       next: () => this.loadTasks()
     });
   }
+
+  getPriorityLabel(priority: number): string {
+  const labels = ['Low', 'Medium', 'High', 'Urgent'];
+  return labels[priority] || 'Unknown';
+}
 }

@@ -4,6 +4,7 @@
     <div class="user-info">
       <span>{{ authService.currentUser()?.fullName }}</span>
       <button (click)="logout()">Logout</button>
+      <a routerLink="/code-review" style="margin-right: 1rem;">AI Code Review</a>
     </div>
   </header>
 

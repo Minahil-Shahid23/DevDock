@@ -1,0 +1,64 @@
+<div class="page">
+  <header class="header">
+    <a routerLink="/projects">&larr; Back</a>
+    <h1>AI Code Review</h1>
+  </header>
+
+  <div class="content">
+    <div class="review-layout">
+      <div class="input-panel">
+        <label>Language</label>
+        <select [(ngModel)]="language">
+          @for (lang of languages; track lang) {
+            <option [value]="lang">{{ lang }}</option>
+          }
+        </select>
+
+        <label>Paste your code</label>
+        <textarea
+          [(ngModel)]="code"
+          placeholder="Paste your code here..."
+          rows="16"
+        ></textarea>
+
+        <button (click)="onSubmit()" [disabled]="isLoading() || !code.trim()">
+          {{ isLoading() ? 'Analyzing...' : 'Review Code' }}
+        </button>
+
+        @if (errorMessage()) {
+          <div class="error-message">{{ errorMessage() }}</div>
+        }
+      </div>
+
+      <div class="result-panel">
+        @if (isLoading()) {
+          <p class="placeholder">AI is analyzing your code...</p>
+        } @else if (result()) {
+          <div class="result-summary">
+            <div class="stat bug">
+              <span class="stat-number">{{ result()!.bugCount }}</span>
+              <span class="stat-label">🐛 Bugs</span>
+            </div>
+            <div class="stat security">
+              <span class="stat-number">{{ result()!.securityIssueCount }}</span>
+              <span class="stat-label">🔐 Security</span>
+            </div>
+            <div class="stat performance">
+              <span class="stat-number">{{ result()!.performanceIssueCount }}</span>
+              <span class="stat-label">⚡ Performance</span>
+            </div>
+          </div>
+
+          <h3>Suggestions</h3>
+          <ul class="suggestions-list">
+            @for (suggestion of result()!.suggestions; track suggestion) {
+              <li>{{ suggestion }}</li>
+            }
+          </ul>
+        } @else {
+          <p class="placeholder">Paste code and click "Review Code" to get AI-powered feedback.</p>
+        }
+      </div>
+    </div>
+  </div>
+</div>
